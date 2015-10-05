@@ -25,4 +25,5 @@ def removelines(filename):
     f = open(filename,'w')
     f.write(ans)
     f.close()
+print "args: "+sys.argv[1]
 removelines(sys.argv[1])

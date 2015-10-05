@@ -1,0 +1,8 @@
+#!/bin/bash
+touch ~/.bash_aliases
+#python install.py
+#echo "
+alias strip='python $PWD/lineremover.py'
+# >> ~/.bash_aliases
+#source ~/.bashrc
+echo "install complete"
