@@ -1,7 +1,15 @@
 import sys
 #import apport
 def removelines(filename):
+    
     f  = open(filename,'r')
+    backup = f.read()
+    backupFile = open(filename+"b",'w')
+    backupFile.write(backup)
+    backupFile.close()
+    f.close()
+    f  = open(filename,'r')
+
     ans = ""
     for x in f:
         i = 0;
@@ -16,4 +24,5 @@ def removelines(filename):
     f.close();
     f = open(filename,'w')
     f.write(ans)
+    f.close()
 removelines(sys.argv[1])
