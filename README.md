@@ -3,6 +3,7 @@ Do you want to troll your APCS teacher? Well it's easier than ever now with the 
 
 to install, simply run:
    "./install
+   
    source ~/.bash_aliases"
 
 To run the program use lineremover <filename>
